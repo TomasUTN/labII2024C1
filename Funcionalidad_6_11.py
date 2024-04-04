@@ -1,7 +1,7 @@
 # FUNCION 6
 
 def Calcular_promedio(suma,cantidad):
-        
+
     """
     Calcula el promedio entre la suma de las edades
     :param suma: Resultado de la suma de todas las edades
@@ -9,7 +9,10 @@ def Calcular_promedio(suma,cantidad):
     :return: Promedio de las edades ingresadas
         
     """
-    return suma/cantidad
+    try:
+        return suma/cantidad
+    except:
+        print("ERROR")
 
 # FUNCION 11
 
@@ -20,7 +23,10 @@ def orden_asc(edades):
     edades
     :return: Lista con numeros ordenados de forma ascendente
     """
-    lista_ordenada = sorted(edades)
+    try:
+        lista_ordenada = sorted(edades)
+    except:
+        print("ERROR")
     return lista_ordenada
 
 
